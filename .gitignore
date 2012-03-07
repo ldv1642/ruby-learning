@@ -1,2 +1,4 @@
 .metadata/
-build/
+build
+*.o
+*.a/
