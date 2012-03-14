@@ -1,4 +1,4 @@
-game = [["Daniel", "P"], ["Bill", "S"]]
+game = [["Daniel", "o"], ["Jess", "r"]]
 
 class WrongNumberOfPlayersError < StandardError;end
 class NosuchStrategyError < StandardError;end
@@ -19,7 +19,7 @@ pattern = /[^p|s|r]/ #find none psr characters
       end
       
       #debug
-      #print "#{player1} throws #{player1Move} against #{player2}'s #{player2Move} \n"
+      print "#{player1} throws #{player1Move} against #{player2}'s #{player2Move} \n"
       #account for throws of same type
       if player1Move == "p" and player2Move == "p"
           return "The list #{game[0]} wins  since the first player is the winnner."
