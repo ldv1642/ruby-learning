@@ -23,4 +23,4 @@ class Fixnum
   end
 end
 
-puts 23.years.to_go
+puts 23.year.to_go

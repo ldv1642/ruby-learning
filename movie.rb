@@ -35,11 +35,11 @@ class Movie
   attr_accessor :title
   attr_accessor :year
   
- /# 
+  #ovveriding attr is possible
   def year
-    @year
+    "#{@year} was a great year, indeed.!"
   end
-  
+  /#
   def year=(new_year)
     @year = new_year
   end
@@ -47,6 +47,19 @@ class Movie
   
 end
 Movie.include_year=true
-b = [23,4,6]
-m = Movie.new("Cool movie", "1987")
-puts m.full_title
+movies = [Movie.new("X-men","1989"),
+  Movie.new("Exorcist","1995")]
+nums = [1,2,3,4,5]
+
+double_nums = nums.map { |m| m*2 }
+puts double_nums
+
+movies.each do |m|
+  puts m.full_title
+end
+
+for i in movies do
+  puts i.full_title
+end
+
+
