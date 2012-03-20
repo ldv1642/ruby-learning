@@ -8,6 +8,3 @@ word4 = "doo bee doo bee doo"
 
 string = "the time is 8:34am, you can come over then or 11:34pm. Your choice."
 pattern = /(\d\d?):(\d\d)\s*([ap])m/
-
-print "hello!"
-
